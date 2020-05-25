@@ -4,9 +4,9 @@
 > **Ne restez pas bloqués bêtement, demander de l'aide**
 > Ne copier pas le code de votre voisin, ça se voit.
 
-Nom/Prénom: `.......`
+Nom/Prénom: Befieux Tom
 
-Lien du codesandbox: `.......`
+Lien du codesandbox: [ici](https://codesandbox.io/s/recursing-albattani-3p4zp)
 
 > Pour générer un codesandbox associé à votre code, [suiver cette doc](https://codesandbox.io/docs/importing#import-from-github)
 
@@ -20,13 +20,17 @@ Il est inventé par [John Horton Conway](https://fr.wikipedia.org/wiki/John_Hort
 1. Expliquer le design pattern MVC à l'aide d'un schéma à insérer directement ici. 
 Utiliser un outils commde Dia pour le représenter. Je veux **votre** schéma, pas un de ceux qu'on peut trouver sur le net.
 
+![Schema pattern](MVC.png)
+
 2. Expliquer ce pattern à l'aide en complétant ce texte.
 
-Le pattern MVP, vise à découper le `.......`, de la `.......` et du `.......` afin de rendre le code plus `.......`.
-Les responsabilités ne sont alors plus `.......`.
-On peut ainsi changer l'aspect visuel de sont application sans pour autant impacter le `.......`.
+Le pattern MVC, vise à découper le modèle, de la vue et du controleur afin de rendre le code plus segmenté.
+Les responsabilités ne sont alors plus interdépendantes.
+On peut ainsi changer l'aspect visuel de sont application sans pour autant impacter le modèle qu'il y a derrière.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC.
+
+Dans les applications de type Web par exemple comme un site en PHP. En somme, lorsqu'on doit séparer le contenu de sa représentation tout en devant manipuler de la donnée.
 
 ## A faire (obligatoire)
 
@@ -42,10 +46,12 @@ En quoi cela relève du design pattern ObserverObservable.
 
 1. Expliquer votre implémentation:
 
-L'usage d'une callback permet ici de `.......` afin dire à la _View_ de se redessiner.
-L'objet _Model_ n'a pas de lien avec `.......` pourtant grâce à la `.......` il peut notifier la `.......`.
+L'usage d'une callback permet ici de pointer vers la fonction drawGame afin dire à la _View_ de se redessiner.
+L'objet _Model_ n'a pas de lien avec la vue pourtant grâce à la callback il peut notifier la fonction de dessin.
 
 2. Insérer ici un UML montrant le pattern Observer-Observable liés aux objects de ce TP.
+
+![Schema pattern Observer](Observer.png)
 
 ## Optionel
 
