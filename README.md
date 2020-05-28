@@ -25,7 +25,7 @@ Utiliser un outils commde Dia pour le représenter. Je veux **votre** schéma, p
 2. Expliquer ce pattern à l'aide en complétant ce texte.
 
 Le pattern MVC, vise à découper le modèle, de la vue et du controleur afin de rendre le code plus segmenté.
-Les responsabilités ne sont alors plus interdépendantes.
+Les responsabilités ne sont alors plus mélangées.
 On peut ainsi changer l'aspect visuel de sont application sans pour autant impacter le modèle qu'il y a derrière.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC.
